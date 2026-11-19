@@ -112,13 +112,12 @@ window.addEventListener("load", function () {
 
 <script>
 fetch("https://hebjedatzelfbedacht.goatcounter.com/counter//.json")
-    .then(r => r.json())
+    .then(response => response.json())
     .then(data => {
         document.getElementById("counter").textContent =
-            String(data.count || 0).padStart(7, "0");
+            String(data.count).padStart(7, "0");
     })
-    .catch(err => {
-        console.error(err);
+    .catch(() => {
         document.getElementById("counter").textContent =
             "0000000";
     });
