@@ -1,42 +1,103 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>hebjedatzelfbedacht.nl</title>
+    <title>hebjedatzelfbedacht.nl</title>
 
-<style>
-body {
-    margin: 0;
-    height: 100vh;
+    <!-- GoatCounter -->
+    <script
+        data-goatcounter="https://hebjedatzelfbedacht.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js">
+    </script>
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
 
-    background: white;
-    font-family: Arial, sans-serif;
-}
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-h1 {
-    margin: 0;
-    font-size: 6rem;
-    font-weight: bold;
-}
+            background: #ffffff;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-img {
-    margin-top: 30px;
-    max-width: 400px;
-}
-</style>
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .gif {
+            margin-top: 20px;
+        }
+
+        .gif img {
+            max-width: 350px;
+            height: auto;
+        }
+
+        .counter {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .number {
+            display: inline-block;
+            padding: 8px 16px;
+
+            font-family: "Courier New", Courier, monospace;
+            font-size: 32px;
+            letter-spacing: 4px;
+
+            color: #444;
+            background: #f3f3f3;
+
+            border: 1px solid #c0c0c0;
+            box-shadow:
+                inset 1px 1px 0 #fff,
+                inset -1px -1px 0 #bbb;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            font-size: 11px;
+            color: #ccc;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Briljant!</h1>
+    <h1>Briljant.</h1>
 
-<img src="slowclap.gif" alt="Slow clap">
+    <div class="gif">
+        <img src="slowclap.gif" alt="Slow clap">
+    </div>
+
+    <div class="counter">
+        <div class="label">Gedocumenteerde casussen</div>
+
+        <div class="number">
+            0000000
+        </div>
+    </div>
+
+    <footer>
+        Sinds 2026.
+    </footer>
 
 </body>
 </html>
