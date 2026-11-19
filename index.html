@@ -109,10 +109,13 @@
 fetch("https://hebjedatzelfbedacht.goatcounter.com/counter//.json")
     .then(response => response.json())
     .then(data => {
+        const count = parseInt(data.count, 10) || 0;
+
         document.getElementById("counter").textContent =
-            String(data.count).padStart(7, "0");
+            count.toString().padStart(7, "0");
     })
-    .catch(() => {
+    .catch(error => {
+        console.error(error);
         document.getElementById("counter").textContent =
             "0000000";
     });
